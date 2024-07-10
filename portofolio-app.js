@@ -150,32 +150,6 @@ function validateForm() {
 
 
 
-
-
-
-
-function sendEmail(){
-    console.log("sendEmail called");
-    let parms ={
-        name: document.getElementById("contact-name").value,
-        email: document.getElementById("email").value,
-        subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value
-    }
-
-    emailjs.send("service_pxrsddz","template_dgcefhc",parms).then(alert("Email Sent!!"))
-
-    }
-
-
-function someFunc(){
-    validateForm(); 
-    sendEmail(); 
-}
-
-
-
-
 PageTransitions(); 
 
 
